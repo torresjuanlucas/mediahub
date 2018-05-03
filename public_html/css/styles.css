@@ -1,0 +1,476 @@
+/* 
+    Created on : 2-May-2018, 9:10:56 AM
+    Author     : Lucas Torres
+*/
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Navbar *******************************************/
+
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    margin-bottom: 0;
+    border-bottom: 1px solid #AAA;
+    position: fixed;
+    z-index: 999;
+    overflow: hidden;
+
+}
+
+.navbar .brand {
+    float: left;
+    padding-right: 6px;
+    height: 100%;
+    width: 23%;
+    font-size: 30px;
+    font-family: tahoma;
+    text-align: right;
+    line-height: 50px;
+    font-weight: bold;
+    padding-left: 20px;
+    border-right: 3px solid #000;
+    background-size: 50%;
+}
+
+.navbar .navigation {
+    text-align: right;
+    width: 42%;
+    height: 100%;
+}
+
+.navbar .navigation li {
+    display: inline-block;
+    width: 16.333%;
+    height: 100%;
+    text-align: right;
+}
+
+.navbar .navigation li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 60px;
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-right: 3px solid transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar .navigation li a:hover {
+    color: #666;
+    border-right: 3px solid #000;
+    letter-spacing: 3px;
+}
+
+.navbar .resbtn {
+    display: none;
+    float: right;
+    width: 40px;
+    height: 35px;
+    margin: 12px 10px 0 0;
+    border: 1px solid rgba(85, 85, 85, 0.65);
+    border-radius: 2px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer
+}
+
+.navbar .resbtn span {
+    display: block;
+    width: 70%;
+    height: 4px;
+    background: #484848;
+    margin-top: 5px;
+    margin-left: 6px;
+    border-radius: 2px;
+}
+
+.navbar .welcome {
+    float: left;
+    height: 100%;
+    width:19%;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: left;
+    line-height: 50px;
+    font-weight: normal;
+    padding-left: 0;
+
+}
+
+.navbar .welcome a {
+    text-decoration: none;
+    color: #000;
+    border-top: 3px solid transparent;
+    padding: 4px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.navbar .welcome a:hover {
+    border-top: 3px solid #000;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width : 1024px) {
+
+    .navbar .brand {
+        width: 100%;
+        float: left;
+        margin-left: 10px;
+        text-align: left;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+    }
+
+    .navbar .navigation {
+        float: none;
+        display: block;
+        height: 0em;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .navbar .navigation li {
+        display: block;
+        width: 100%;
+        height: 60px;
+        background: #fff;
+        text-align: left
+    }
+
+    .navbar .navigation li a {
+        text-align: right;
+        padding-left: 5px;
+    }
+
+    .navbar .welcome {
+        display: none;
+    }
+
+    .navbar .resbtn {
+        display: block;
+    }
+}
+
+/* video-section *************************************/
+
+
+#video-section {
+    width: 100%;
+    height: auto;
+    padding: 35px 0;
+    background: #D5DBDB;
+}
+
+.responsive-video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.responsive-video video {
+    top: 0;
+    left: 10%;
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid #666;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 2;
+}
+
+.responsive-image {
+    width: 100%;
+    height: 100%;
+    margin: 10px 0 15px 0;
+    position: relative;
+
+}
+
+.main-avatar-image {
+    border: 1px solid #666;
+    max-height: 100%;
+    max-width: 100%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-avatar-info {
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+.main-avatar-info h2 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color:#000;
+    font-size:18px;
+}
+
+.main-avatar-info p {
+    padding: 0 0 10px 0;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color:#000;
+    font-size:14px;
+    text-align: justify;
+}
+
+.read-more-state {
+    display: none;
+}
+
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+    content: 'Show more';
+    color: #000;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-left: -10px;
+    text-transform:uppercase;
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Show less';
+    color: #000;
+    border: 1px solid #000;
+}
+
+.read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #666;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+}
+
+@media screen and (max-width : 648px) {
+    .responsive-image {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+/* message-box-section *******************************/
+
+
+#message-box-section {
+    width: 100%;
+    background: #fff;
+    padding: 20px 0;
+}
+
+.heading {
+    padding: 10px 0;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color:#000;
+    font-size:18px;
+    text-align: left;
+}
+
+.button-group {
+    margin-bottom: 20px;
+}
+.counter {
+    display: inline;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+textarea.form-control {
+    height: 150px;
+    border: 1px solid #000;
+    font-size: 15px;
+    color: #000;
+}
+
+.btn-primary {
+    font-family: 'PT Sans', sans-serif !important;
+    font-size: 12px !important;
+    color: #000 !important;
+    background-color: #fff !important;
+    border-color: #000 !important;
+    border-radius: 0 !important;
+    text-transform:uppercase;
+    font-weight: 700;
+}
+
+/*comments-section****************************/
+
+
+.comments-container {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+p.username { 
+    font-family: 'PT Sans', sans-serif !important; 
+    margin: 25px 0; 
+    font-size: 15px;
+    color: #333;
+    line-height: 24px; 
+    text-indent: 10px;
+    font-weight: 700;
+}
+
+p.username img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-width: 0; 
+    vertical-align: middle;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    float: left;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+}
+
+p.info {
+    font-size: 15px;
+    color: #333;
+    line-height: 24px;
+    margin-left: 60px;
+    padding-bottom: 10px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 480px) {
+
+
+    p.info {margin-left: 0;}
+
+}
+
+@media (max-width: 320px) {
+
+    p.info {margin-left: 0;}
+}
+
+/*footer section******************************/
+
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 35px 0 0 0;
+    background: #D5DBDB;
+}
+
+.footer-left {
+    position: relative;
+    width: 100%;
+    display:inline-block;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 4px 0;
+    text-align: left;
+}
+
+.footer-left a {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color:#666;
+    font-size:18px;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-left a:hover {
+    text-decoration: none;
+    color:#000;
+}
+
+.footer-right {
+    position: relative;
+    display:block;
+}
+
+.footer-img-container {
+    position: relative;
+    width: 100%;
+    padding: 5px 0;
+    text-align: right;
+}
+
+.footer-img-container .footer-image {
+    width: 55%;
+    height: 100%;
+}
+
+.footer-bottom {
+    margin: 10px 0 0 0;
+    padding: 20px 0 0 0;
+}
+
+.footer-bottom-container {
+    text-align: center;
+}
+
+.footer-bottom-container a {
+    font-family: 'PT Sans', sans-serif;
+    color:#666;
+    font-size:14px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-bottom-container a:hover {
+    text-decoration: none;
+    color:#000;
+}
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        text-align: center;
+    }
+
+    .footer-img-container {
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+
+
+
+

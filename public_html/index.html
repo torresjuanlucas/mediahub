@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--
+Author: Lucas Torres.
+Description: Mediahub Junior integrator test - Video player single page Design.
+Date: May 5th, 2018.
+-->
+<html>
+    <head>
+        <title>Video Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="mediahub video player junior integrator test Lucas Torres">
+        <meta name="keywords" content="Lucas, Torres, mediahub, video, player, test, junior, integrator">
+        <meta name="author" content="Lucas Torres">
+
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/animate.css" rel="stylesheet" type="text/css"/>
+
+
+    </head>
+    <body>
+        <nav class="navbar">
+            <!-- Brand Logo Box -->
+            <div class="brand">//Natüre</div>
+            <!-- Navigation -->
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Natüre</a></li>
+            </ul>
+            <div class="welcome"><a href="#">//Welcome</a></div>
+            <div class="resbtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <section id="video-section">
+            <div class="container animated fadeIn">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12 col-sm-12 col-12 offset-lg-1">
+
+                        <div class="responsive-video animated fadeIn">
+                            <video controls>
+                                <source src="video/ocean.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-12 offset-lg-1">
+                        <div class="responsive-image">
+                            <img class="main-avatar-image" src="img/avatar-1.jpg" alt="avatar-1" height="120" width="120">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 main-avatar-info">
+                        <input type="checkbox" class="read-more-state" id="post-1" />
+                        <h2>Discover this hidden caribbean island - By Ivanka Rodak</h2>
+                        <p class="read-more-wrap">Lorem ipsum dolor sit amet, consectetur adipisicing elit, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            <span class="read-more-target">Libero fuga facilis vel consectetur quos sapiente deleniti eveniet dolores tempore eos deserunt officia quis ab? Excepturi vero tempore minus beatae voluptatem!Libero fuga facilis vel consectetur quos sapiente deleniti eveniet dolores tempore eos deserunt officia quis ab? Excepturi vero tempore minus beatae voluptatem!</span>
+                        </p>
+                        <label for="post-1" class="read-more-trigger"></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="message-box-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12 col-sm-12 col-12 offset-lg-1">
+                        <h3 class="heading">Add a comment</h3>
+                        <form>
+                            <div class="form-group">
+                                <textarea class="form-control status-box" rows="3" placeholder="Enter your comment here..."></textarea>
+                            </div>
+                        </form>
+                        <div class="button-group pull-right">
+                            <p class="counter">250</p>
+                            <a href="#" class="btn btn-primary">Post</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comments">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12 col-sm-12 col-12 offset-lg-1">
+                        <div class="comments-container">
+                            <p class="username"><img class="maskable" src="img/avatar-2.jpg" />Diego costa</p>
+                            <p class="info">What an amazing view! I would love to go there one day.</p>
+                        </div>
+
+                        <div class="comments-container">
+                            <p class="username"><img class="maskable" src="img/avatar-3.jpg" />Anna Desjardins</p>
+                            <p class="info">Yes! I was there not too long ago. What an amazing trip! I recommend it!!</p>
+                        </div>
+
+                        <div class="comments-container">
+                            <p class="username"><img class="maskable" src="img/avatar-4.jpg" />Frank Langella</p>
+                            <p class="info">Maybe next year, Do you think it will be good during Winter?</p>
+                        </div>
+
+                        <div class="comments-container">
+                            <p class="username"><img class="maskable" src="img/avatar-5.jpg" />Roberto Petinatto</p>
+                            <p class="info">I will go there for sure!! I just need some money and a girlfriend, too expensive for me right now... maybe in 2020!!.</p>
+                        </div>
+
+                        <div class="comments-container">
+                            <p class="username"><img class="maskable" src="img/avatar-6.jpg" />Robert Jones</p>
+                            <p class="info">If you are reading this, it means you enjoyed the last five comments, right?</p>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container animated fadeIn">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-12 offset-lg-1">
+                        <div class="footer-left">
+                            <div class="footer-container">
+                                <a href="http://lucastorres.ca">Our mission</a>
+                            </div>
+                            <div class="footer-container">
+                                <a href="http://lucastorres.ca">Team members</a>
+                            </div>
+                            <div class="footer-container">
+                                <a href="http://lucastorres.ca">Natüre Blog</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-12">
+                        <div class="footer-right">
+                            <div class="footer-img-container">
+                                <img class="footer-image" src="img/nature-logo.png" alt="nature-logo" height="60" width="100">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-10 col-md-12 col-sm-12 col-12 offset-lg-1">
+                        <div class="footer-bottom">
+                            <div class="footer-bottom-container">
+                                <a href="http://lucastorres.ca">Copyright 2018 - Lucas Torres</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+    </body>
+</html>
